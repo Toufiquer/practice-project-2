@@ -6,6 +6,7 @@ const ShowAllData = () => {
   useEffect(() => {
     fetch("data.json").then((res) => res.json().then((d) => setData(d)));
   }, []);
+    
   return (
     <div>
       <h2>Show All Data From Fake DB</h2>
